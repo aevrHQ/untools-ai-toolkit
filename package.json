@@ -1,0 +1,45 @@
+{
+  "name": "@untools/ai-toolkit",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "prepublishOnly": "npm run build",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch"
+  },
+  "keywords": [
+    "ai",
+    "toolkit",
+    "agents",
+    "providers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A reusable AI toolkit for creating providers and agents",
+  "dependencies": {
+    "ai": "latest",
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/anthropic": "latest",
+    "@ai-sdk/google": "latest",
+    "@ai-sdk/groq": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "dotenv": "^16.0.0",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "standard-version": "^9.5.0",
+    "ts-jest": "^29.3.1"
+  }
+}
