@@ -22,8 +22,19 @@
     "agents",
     "providers"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Miracle Onyenma",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aevrHQ/untools-ai-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aevrHQ/untools-ai-toolkit/issues"
+  },
+  "homepage": "https://github.com/aevrHQ/untools-ai-toolkit#readme",
   "description": "A reusable AI toolkit for creating providers and agents",
   "dependencies": {
     "ai": "latest",
